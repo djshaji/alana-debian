@@ -1,0 +1,7 @@
+Package: amprack
+Version: 0.9-1
+Section: sound
+Priority: optional
+Architecture: amd64
+Maintainer: Shaji <code@shaji.in>
+Description: Guitar Effects Processor
