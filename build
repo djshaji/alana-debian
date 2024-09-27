@@ -2,4 +2,5 @@ COUNT=`git -C /home/djshaji/projects/alana rev-list HEAD --count`
 cp -v /home/djshaji/projects/alana/amprack amprack_0.9-1/usr/bin/
 cp -vr /home/djshaji/projects/alana/libs/linux/x86_64/ amprack_0.9-1/usr/share/amprack/libs/linux/
 cp -vr /home/djshaji/projects/alana/assets/ amprack_0.9-1/usr/share/amprack/
-dpkg-deb --build amprack_0.9-1 amprack-$COUNT
+rm -v amprack-*.deb
+dpkg-deb --build amprack_0.9-1 amprack-$COUNT.deb
